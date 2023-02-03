@@ -27,7 +27,7 @@ namespace padding_v_margin
             flowLayoutPanel.Margin = new Padding(all: 0);
             flowLayoutPanel.Padding = new Padding(all: 0);
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 1; i <= 6; i++)
             {
                 var panel = new TableLayoutPanel
                 {
@@ -54,7 +54,7 @@ namespace padding_v_margin
                 var button = new Button
                 {
                     Name = $"button{i}",
-                    Text = $"Button {i}",
+                    Text = $"Button {(char)(64 + i)}",
                     BackColor = Color.DarkSeaGreen,
                     ForeColor = Color.WhiteSmoke,
                     // By anchoring the button, it will autosize
